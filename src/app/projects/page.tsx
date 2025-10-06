@@ -2,10 +2,28 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Clasificación con XGBoost',
-    description: 'Este proyecto presenta un pipeline de clasificación robusto utilizando XGBoost, uno de los algoritmos más potentes y populares para problemas de datos tabulares.',
-    link: 'https://github.com/yetsyy/classification_with_xgboost',
-    image: '/yetsyy/xgboost.png',
+    title: 'Aprendizaje No Supervisado',
+    description: 'Este proyecto implementa un pipeline completo de aprendizaje no supervisado. Incluye la reducción de dimensionalidad con PCA y t-SNE, y la segmentación de datos mediante clustering jerárquico.',
+    link: 'https://github.com/yetsyy/unsupervised_learning',
+    image: '/yetsyy/unsupervised_learning.png',
+  },
+  {
+    title: 'NLP con BERT',
+    description: 'Este proyecto demuestra una aplicación avanzada de Procesamiento del Lenguaje Natural (NLP) utilizando un modelo Transformer (BERT) para una tarea de clasificación de \'disparo único\' (zero-shot).',
+    link: 'https://github.com/yetsyy/nlp_with_bert',
+    image: '/yetsyy/nlp_with_bert.png',
+  },
+  {
+    title: 'Interpretability de Modelos',
+    description: 'Este proyecto aborda uno de los desafíos más importantes en la ciencia de datos moderna: la interpretabilidad de los modelos de \'caja negra\'. Se utiliza la librería LIME (Local Interpretable Model-Agnostic Explanations).',
+    link: 'https://github.com/yetsyy/model_interpretability',
+    image: '/yetsyy/model_interpretability.png',
+  },
+  {
+    title: 'Clasificación de Imágenes',
+    description: 'Este proyecto implementa una Red Neuronal Convolucional (CNN) para una tarea de clasificación de imágenes. Las CNN son el estándar de oro para el análisis de datos visuales.',
+    link: 'https://github.com/yetsyy/image_classification',
+    image: '/yetsyy/image_classification.png',
   },
   {
     title: 'Optimización de Hiperparámetros',
@@ -14,10 +32,22 @@ const projects = [
     image: '/yetsyy/hyperparameter.png',
   },
   {
-    title: 'Clasificación de Imágenes',
-    description: 'Este proyecto implementa una Red Neuronal Convolucional (CNN) para una tarea de clasificación de imágenes. Las CNN son el estándar de oro para el análisis de datos visuales.',
-    link: 'https://github.com/yetsyy/image_classification',
-    image: '/yetsyy/image_classification.png',
+    title: 'Clasificación con XGBoost',
+    description: 'Este proyecto presenta un pipeline de clasificación robusto utilizando XGBoost, uno de los algoritmos más potentes y populares para problemas de datos tabulares.',
+    link: 'https://github.com/yetsyy/classification_with_xgboost',
+    image: '/yetsyy/xgboost.png',
+  },
+  {
+    title: 'API con Docker',
+    description: 'Este proyecto demuestra cómo crear y \'dockerizar\' una API simple con Python.',
+    link: 'https://github.com/yetsyy/sesion2_docker_api',
+    image: '/yetsyy/docker.png',
+  },
+  {
+    title: 'Proyecto en R',
+    description: 'Un proyecto de anÃ¡lisis de datos utilizando R.',
+    link: 'https://github.com/yetsyy/Proyecto_2',
+    image: '/yetsyy/r_project.png',
   },
 ];
 
