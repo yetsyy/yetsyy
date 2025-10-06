@@ -3,6 +3,8 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 
+const nextI18NextConfig = require('../../next-i18next.config.js');
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -18,4 +20,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default appWithTranslation(MyApp);
+export default appWithTranslation(MyApp, nextI18NextConfig);
