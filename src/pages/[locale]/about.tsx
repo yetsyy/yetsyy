@@ -1,5 +1,5 @@
 
-import React from 'react';
+import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { FaLinkedin, FaFileDownload } from 'react-icons/fa';
@@ -29,7 +29,7 @@ const AboutPage = () => {
     <div className="container mx-auto p-4 text-white">
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
         <div className="w-full md:w-1/3 flex justify-center">
-          <img src="/yetsyy/LiProfile.jpeg" alt="Li Carvallo Escudero" className="rounded-full w-48 h-48 object-cover" />
+          <Image src="/LiProfile.jpeg" alt="Li Carvallo Escudero" width={192} height={192} className="rounded-full w-48 h-48 object-cover" />
         </div>
         <div className="w-full md:w-2/3 text-center md:text-left">
           <h1 className="text-4xl font-bold mb-4">Li Carvallo Escudero</h1>

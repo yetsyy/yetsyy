@@ -23,5 +23,6 @@
   "hyperparameter_tuning_description": "Este proyecto demuestra la optimización de un modelo de Machine Learning (Random Forest) utilizando dos librerías de vanguardia: Optuna y Ray Tune.",
   "classification_with_xgboost_description": "Este proyecto presenta un pipeline de clasificación robusto utilizando XGBoost, uno de los algoritmos más potentes y populares para problemas de datos tabulares.",
   "docker_api_description": "Este proyecto demuestra cómo crear y 'dockerizar' una API simple con Python.",
-  "r_project_description": "Un proyecto de análisis de datos utilizando R."
+  "r_project_description": "Un proyecto de análisis de datos utilizando R.",
+  "all_rights_reserved": "Todos los derechos reservados."
 }
