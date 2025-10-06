@@ -50,13 +50,13 @@ const AboutPage = () => {
       <div className="mt-12">
         <h2 className="text-3xl font-bold mt-8 mb-4">{t('about_me')}</h2>
         <p className="text-lg mb-4">
-          Mi experiencia inicial en investigación cualitativa y cuantitativa, trabajando en terreno con comunidades para programas del MINVU y estudios de impacto ambiental, me reveló tanto el poder de los datos como las limitaciones de los métodos tradicionales para procesarlos a gran escala. Esta convicción me llevó a dar un paso deliberado hacia la tecnología, primero cursando un Diplomado en Ciencia de Datos para Políticas Públicas en la Pontificia Universidad Católica de Chile para construir una base cuantitativa robusta, y culminando con una intensiva Especialización en Machine Learning, donde adquirí las competencias técnicas para transformar datos en soluciones predictivas de alto impacto.
+          {t('about_me_p1')}
         </p>
         <p className="text-lg mb-4">
-          Mi formación técnica me ha dotado de un dominio integral del ciclo de vida de la inteligencia artificial. Poseo competencias avanzadas para el desarrollo de soluciones de IA de extremo a extremo: desde la programación avanzada en Python y la construcción de modelos predictivos (regresión, clasificación, clustering) y de Deep Learning (Redes Neuronales, Transformers). Mi especialización abarca desde el preprocesamiento de datos y la optimización de hiperparámetros, garantizando soluciones escalables, eficientes y mantenibles.
+          {t('about_me_p2')}
         </p>
         <p className="text-lg mb-4">
-          Mi propuesta de valor única reside en la fusión de mi rigurosa formación sociológica con mi especialización técnica en IA. Esta combinación me permite no solo construir modelos algorítmicamente complejos, sino también comprender profundamente el contexto social en el que operan. Mi objetivo es aplicar modelos de IA interpretables y éticos para resolver problemas complejos en el sector público y social, asegurando que la tecnología genere un impacto positivo y equitativo. Estoy especialmente capacitada en técnicas de Interpretabilidad y Explicabilidad (XAI) con herramientas como LIME y SHAP, lo que me permite auditar, explicar y mitigar sesgos en los modelos, garantizando que las decisiones automatizadas sean justas, transparentes y socialmente responsables.
+          {t('about_me_p3')}
         </p>
 
         <h2 className="text-3xl font-bold mt-8 mb-4">{t('skills')}</h2>

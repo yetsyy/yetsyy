@@ -7,20 +7,18 @@ const LanguageSwitcher = () => {
     i18n.changeLanguage(lng);
   };
 
+  const languages = ['en', 'es', 'fr', 'pt'];
+
   return (
-    <div className="flex space-x-2">
-      <button onClick={() => changeLanguage('en')} className={i18n.language === 'en' ? 'font-bold' : ''}>
-        EN
-      </button>
-      <button onClick={() => changeLanguage('es')} className={i18n.language === 'es' ? 'font-bold' : ''}>
-        ES
-      </button>
-      <button onClick={() => changeLanguage('fr')} className={i18n.language === 'fr' ? 'font-bold' : ''}>
-        FR
-      </button>
-      <button onClick={() => changeLanguage('pt')} className={i18n.language === 'pt' ? 'font-bold' : ''}>
-        PT
-      </button>
+    <div className="flex rounded-md bg-gray-800 p-1">
+      {languages.map((lng) => (
+        <button 
+          key={lng} 
+          onClick={() => changeLanguage(lng)} 
+          className={`px-3 py-1 text-sm font-medium rounded-md transition-colors ${i18n.language === lng ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-700'}`}>
+          {lng.toUpperCase()}
+        </button>
+      ))}
     </div>
   );
 };

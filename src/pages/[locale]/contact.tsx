@@ -25,58 +25,59 @@ const ContactPage = () => {
   const { t } = useTranslation('common');
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-4xl font-bold mb-4">{t('contact_me')}</h1>
-      <p className="text-lg mb-4">
-        {t('contact_me_description')}
-      </p>
+    <div className="container mx-auto p-4 flex flex-col items-center">
+      <div className="w-full max-w-2xl">
+        <h1 className="text-4xl font-bold mb-4 text-center">{t('contact_me')}</h1>
+        <p className="text-lg mb-8 text-center">
+          {t('contact_me_description')}
+        </p>
 
-      <form className="w-full max-w-lg mx-auto">
-        <div className="flex flex-wrap -mx-3 mb-6">
-          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" htmlFor="grid-first-name">
-              <FaUser className="inline-block mr-1" /> {t('first_name')}
-            </label>
-            <input className="appearance-none block w-full bg-gray-700 text-white border border-gray-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800" id="grid-first-name" type="text" placeholder="Jane" />
-          </div>
-          <div className="w-full md:w-1/2 px-3">
-            <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" htmlFor="grid-last-name">
-              <FaUser className="inline-block mr-1" /> {t('last_name')}
-            </label>
-            <input className="appearance-none block w-full bg-gray-700 text-white border border-gray-600 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-800 focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
-          </div>
+        <div className="bg-secondary bg-opacity-80 p-8 rounded-lg shadow-lg border border-gray-700">
+          <form className="w-full">
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-first-name">
+                  {t('first_name')}
+                </label>
+                <input className="appearance-none block w-full bg-primary border border-gray-600 text-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-900 focus:border-blue-500" id="grid-first-name" type="text" />
+              </div>
+              <div className="w-full md:w-1/2 px-3">
+                <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
+                  {t('last_name')}
+                </label>
+                <input className="appearance-none block w-full bg-primary border border-gray-600 text-white rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-900 focus:border-blue-500" id="grid-last-name" type="text" />
+              </div>
+            </div>
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="email">
+                  {t('email')}
+                </label>
+                <input className="appearance-none block w-full bg-primary border border-gray-600 text-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-900 focus:border-blue-500" id="email" type="email" />
+              </div>
+            </div>
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="message">
+                  {t('message')}
+                </label>
+                <textarea className="no-resize appearance-none block w-full bg-primary border border-gray-600 text-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-900 focus:border-blue-500 h-48 resize-none" id="message"></textarea>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <button className="shadow bg-blue-600 hover:bg-blue-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded-full flex items-center justify-center" type="button">
+                <FaPaperPlane className="mr-2" /> {t('send')}
+              </button>
+            </div>
+          </form>
         </div>
-        <div className="flex flex-wrap -mx-3 mb-6">
-          <div className="w-full px-3">
-            <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" htmlFor="grid-password">
-              <FaEnvelope className="inline-block mr-1" /> {t('email')}
-            </label>
-            <input className="appearance-none block w-full bg-gray-700 text-white border border-gray-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800 focus:border-gray-500" id="email" type="email" />
-          </div>
-        </div>
-        <div className="flex flex-wrap -mx-3 mb-6">
-          <div className="w-full px-3">
-            <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" htmlFor="grid-password">
-              {t('message')}
-            </label>
-            <textarea className=" no-resize appearance-none block w-full bg-gray-700 text-white border border-gray-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800 focus:border-gray-500 h-48 resize-none" id="message"></textarea>
-          </div>
-        </div>
-        <div className="md:flex md:items-center">
-          <div className="md:w-1/3">
-            <button className="shadow bg-blue-500 hover:bg-blue-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded flex items-center justify-center" type="button">
-              <FaPaperPlane className="mr-2" /> {t('send')}
-            </button>
-          </div>
-          <div className="md:w-2/3"></div>
-        </div>
-      </form>
 
-      <div className="mt-8 text-center">
-        <h2 className="text-2xl font-bold mb-2">{t('connect_on_linkedin')}</h2>
-        <a href="https://www.linkedin.com/in/li-carvallo" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full inline-flex items-center justify-center" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="mr-1" /> www.linkedin.com/in/li-carvallo
-        </a>
+        <div className="mt-12 text-center">
+          <h2 className="text-2xl font-bold mb-4">{t('connect_on_linkedin')}</h2>
+          <a href="https://www.linkedin.com/in/li-carvallo" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full inline-flex items-center justify-center" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="mr-2" /> LinkedIn
+          </a>
+        </div>
       </div>
     </div>
   );

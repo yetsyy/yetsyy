@@ -80,14 +80,14 @@ const ProjectsPage = () => {
       <h1 className="text-4xl font-bold mb-8 text-center">{t('projects')}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
-            <div className="w-full h-48 flex items-center justify-center bg-gray-700">
-              <project.icon className="text-6xl text-gray-400" />
+          <div key={index} className="bg-secondary rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col border border-gray-700">
+            <div className="w-full h-56 flex items-center justify-center bg-gradient-to-br from-primary to-secondary">
+              <project.icon className="text-8xl text-gray-400 group-hover:text-white transition-colors" />
             </div>
             <div className="p-6 flex flex-col flex-grow">
               <h2 className="text-2xl font-bold mb-2 text-white">{project.title}</h2>
               <p className="text-gray-400 mb-4 flex-grow">{t(project.description)}</p>
-              <a href={project.link} className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 flex items-center justify-center mt-auto">
+              <a href={project.link} className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 flex items-center justify-center mt-auto">
                 <FaExternalLinkAlt className="mr-2" /> {t('view_project')}
               </a>
             </div>
