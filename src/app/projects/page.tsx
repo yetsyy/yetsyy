@@ -5,19 +5,19 @@ const projects = [
     title: 'Clasificación con XGBoost',
     description: 'Este proyecto presenta un pipeline de clasificación robusto utilizando XGBoost, uno de los algoritmos más potentes y populares para problemas de datos tabulares.',
     link: 'https://github.com/yetsyy/classification_with_xgboost',
-    image: '/xgboost.png',
+    image: '/yetsyy/xgboost.png',
   },
   {
     title: 'Optimización de Hiperparámetros',
     description: 'Este proyecto demuestra la optimización de un modelo de Machine Learning (Random Forest) utilizando dos librerías de vanguardia: Optuna y Ray Tune.',
     link: 'https://github.com/yetsyy/hyperparameter_tuning',
-    image: '/hyperparameter.png',
+    image: '/yetsyy/hyperparameter.png',
   },
   {
     title: 'Clasificación de Imágenes',
     description: 'Este proyecto implementa una Red Neuronal Convolucional (CNN) para una tarea de clasificación de imágenes. Las CNN son el estándar de oro para el análisis de datos visuales.',
     link: 'https://github.com/yetsyy/image_classification',
-    image: '/image_classification.png',
+    image: '/yetsyy/image_classification.png',
   },
 ];
 

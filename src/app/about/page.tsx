@@ -6,7 +6,7 @@ const AboutPage = () => {
     <div className="container mx-auto p-4 text-white">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         <div className="md:col-span-1">
-          <img src="/LiProfile.jpeg" alt="Li Carvallo Escudero" className="rounded-full w-48 h-48 mx-auto" />
+          <img src="/yetsyy/LiProfile.jpeg" alt="Li Carvallo Escudero" className="rounded-full w-48 h-48 mx-auto" />
         </div>
         <div className="md:col-span-2">
           <h1 className="text-4xl font-bold mb-4">Li Carvallo Escudero</h1>
@@ -16,7 +16,7 @@ const AboutPage = () => {
           <a href="https://www.linkedin.com/in/li-carvallo" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">
             Perfil de LinkedIn
           </a>
-          <a href="/curriculum%20vitae%20Li%20Carvallo%20Escudero.pdf" className="ml-4 text-blue-400 hover:underline" download>
+          <a href="/yetsyy/curriculum vitae Li Carvallo Escudero.pdf" className="ml-4 text-blue-400 hover:underline" download>
             Descargar CV
           </a>
         </div>
