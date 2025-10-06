@@ -8,16 +8,14 @@ const nextI18NextConfig = require('../../next-i18next.config.js');
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <Layout>
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Li Carvallo Escudero - Data Scientist</title>
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 

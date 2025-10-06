@@ -7,7 +7,7 @@ const Index = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace(`/${i18n.defaultLocale}${router.asPath}`);
+    router.replace(`/${i18n.defaultLocale}`);
   }, [router]);
 
   return (
